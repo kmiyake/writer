@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      document: ドキュメント
+      paper_trail/version: 編集履歴
+  application:
+    brand: Writer
+  events:
+    create: '%{model}を作成しました。'
+    update: '%{model}を更新しました。'
