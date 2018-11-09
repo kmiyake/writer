@@ -8,3 +8,7 @@ ja:
   events:
     create: '%{model}を作成しました。'
     update: '%{model}を更新しました。'
+  helpers:
+    submit:
+      create: '%{model}を作成する'
+      update: '%{model}を更新する'
