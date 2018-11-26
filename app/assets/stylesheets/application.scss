@@ -1,1 +1,11 @@
 @import "bootstrap";
+
+.changed {
+  ins {
+    color: $success;
+  }
+
+  del {
+    color: $danger;
+  }
+}
