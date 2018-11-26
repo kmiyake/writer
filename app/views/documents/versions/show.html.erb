@@ -1,7 +1,13 @@
 <div class="row justify-content-md-center">
   <div class="col-8 p-4">
     <div class="d-flex justify-content-between mb-3">
-      <%= link_to "\"#{@document.name}\"へ戻る", document_path(@document) %>
+      <%= link_to "\"#{@document.name}\"へ戻る", document_path(@document), class: 'align-self-center' %>
+      <% if @version.next.present? %>
+        <%= button_to 'このバージョンへ戻す', document_version_path(@document, @version),
+          class: 'btn btn-outline-primary',
+          method: :patch,
+          data: { confirm: '本当によろしいですか？' } %>
+      <% end %>
     </div>
     <h1 class="font-weight-bold mb-4">
       このバージョンを表示する
